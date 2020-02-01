@@ -1,0 +1,149 @@
+:root{
+  --primary-color: #c72727;
+  --secondary-color:#f99500;
+  --light-color:#f3f3f3;
+  --dark-color:#333;
+  --max-width:1100px;
+}
+
+.category{
+  --sports-color:#f99500;
+  --ent-color:#a66bbe;
+  --tech-color:#009cff;
+}
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  background: var(--light-color);
+}
+a{
+  color:#333;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  margin: .5rem 0;
+}
+
+img{
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Staaliches', cursive;
+  margin-bottom: .55rem;
+  line-height: 1.3;
+}
+
+/* Utility */
+.container{
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+#main-nav{
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container{
+  display: grid;
+  grid-template-columns: 1fr 7fr 2fr ;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo{
+  width: 180px;
+}
+
+#main-nav ul{
+  justify-self: end;
+  display: flex;
+}
+
+#main-nav ul li a{
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+
+#main-nav ul li .cart{
+  color: var(--secondary-color);
+}
+
+#main-nav .search-section{
+  justify-self: center;
+  
+}
+
+#main-nav .search-section input{
+  padding :1rem 10rem 1rem .5rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+#main-nav .container .search-section .search-icon{
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  padding :.8rem 3rem 1rem .8rem;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  margin-left: -.3rem;
+  
+}
+
+
+
+#showcase{
+  color:#fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before{
+  content:'';
+  background: url('../img/electronics.jpg') no-repeat center center/cover;
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+#showcase .showcase-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+
+#showcase .showcase-content{
+  z-index: 1;
+}
+
+#showcase .showcase-content p{
+  margin-bottom: 1rem;
+}
+
+
