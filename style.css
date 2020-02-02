@@ -57,9 +57,9 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 0.5rem;
 }
 
-.category-sports {background: var(--sports-color);}
-.category-ent {background: var(--ent-color);}
-.category-tech {background: var(--tech-color);}
+.category-1 {background: var(--sports-color);}
+.category-2 {background: var(--ent-color);}
+.category-3 {background: var(--tech-color);}
 
 
 
@@ -215,6 +215,7 @@ h1,h2,h3,h4,h5,h6{
   grid-template-columns: repeat(4, 1fr);
   grid-column: 1 /span 2;
   align-items: center;
+  grid-gap: .5rem;
 }
 
 
