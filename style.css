@@ -183,7 +183,7 @@ h1,h2,h3,h4,h5,h6{
 
 #showcase:before{
   content:'';
-  background: url('../img/electronics.jpg') no-repeat center center/cover;
+  background: url('./img/electronics.jpg') no-repeat center center/cover;
   position: absolute;
   top:0;
   left: 0;
@@ -261,4 +261,147 @@ h1,h2,h3,h4,h5,h6{
   padding: 1rem;
 }
 
+/* Footer styling starts here */
+footer{
+  background: #000;
+  color: #fff;
+}
 
+.footer-header {
+	display: flex;
+	justify-content: space-evenly;
+  padding-top: 30px;
+  margin-top: 150px
+}
+
+.footer-header .name {
+	font-size: 1.6rem;
+	flex: 1;
+	padding-left: 50px;
+}
+.footer-header .subscription{
+ 
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.footer-header .download-app{
+  flex: 1;
+}
+.footer-header .subscription form input{
+	border-radius: 3px;
+	height: 32px;
+	border: none;
+	padding: 5px;
+	width: 45%;
+}
+.footer-header button {
+	height: 32px;
+	width: 80px;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	background: #000;
+  color: #fff;
+  
+}
+.btn-mg-left{
+  margin-left: 8px;
+}
+.footer-header .subscription form button:first-child{
+margin-right: 10px;
+}
+.footer-header .cart-footer{
+  display: flex;
+}
+
+.footer-header .cart-footer p:first-child{
+ 
+    padding: 10px;
+    background: #f99500;
+    border-radius: 5px;
+  margin-right: 10px;
+}
+.wrapper{
+  background: #0f0e0e;
+}
+
+footer .footer-bottom {
+	display: flex;
+	justify-content: space-evenly;
+	
+  margin: 50px 0;
+  padding: 20px 0;
+	
+}
+footer .help{
+  flex: 1;
+  padding-left: 50px;
+}
+footer .more{
+  flex: 2;
+  display: flex;
+}
+
+footer .country{
+  flex: 1;
+  display: flex;
+  
+}
+footer .about{
+  width: 35%;
+}
+footer a{
+  color: #fff;
+  font-size: .7rem;
+}
+footer p{
+  font-size: .7rem;
+  font-weight: bold;
+ 
+}
+footer ul{
+  padding-top: 20px;
+}
+
+.country-right ul{
+  margin-top: 30px;
+}
+/* contact section is the row after the bottom */
+.contact-section {
+
+}
+.container-contact{
+	display: flex;
+	padding-left: 50px;
+}
+
+.social-media {
+width: 25%;
+}
+.social-media i{
+  
+    letter-spacing: 10px;
+    padding: 20px 0;
+  
+}
+.phone{
+  width: 17%;
+}
+.payment-method{
+  
+}
+
+.payment-method i{
+  letter-spacing: 10px;
+    padding: 20px 0;
+}
+
+hr{
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid #fff;
+}
+.last{
+  text-align: center;
+  letter-spacing: 8px;
+}
