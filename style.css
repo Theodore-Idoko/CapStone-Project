@@ -1,3 +1,4 @@
+
 :root{
   --primary-color: #c72727;
   --secondary-color:#f99500;
@@ -352,11 +353,13 @@ footer .about{
 }
 footer a{
   color: #fff;
-  font-size: .7rem;
+  font-size: .8rem;
+  letter-spacing: 1px;
 }
 footer p{
-  font-size: .7rem;
+  font-size: .8rem;
   font-weight: bold;
+  letter-spacing: 1px;
  
 }
 footer ul{
