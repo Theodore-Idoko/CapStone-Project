@@ -123,9 +123,7 @@ h1,h2,h3,h4,h5,h6{
   color: #a66bbe;
 }
 
-#main-nav .logo{
-  width: 180px;
-}
+
 
 #main-nav ul{
   justify-self: end;
@@ -163,6 +161,10 @@ h1,h2,h3,h4,h5,h6{
   background-color: var(--secondary-color);
   margin-left: -.1rem;
   
+}
+
+#main-nav .container .search-section .search-icon i{
+  margin-left: 2rem;
 }
 
 
@@ -289,6 +291,7 @@ h1,h2,h3,h4,h5,h6{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  transition: transform  .8s;
 }
 
 .electronic-gadget1{
@@ -301,7 +304,7 @@ h1,h2,h3,h4,h5,h6{
   grid-column: 1 /span 2;
   align-items: center;
   grid-gap: .8rem;
-  transition: transform  .3s;
+  transition: transform  .8s;
 }
 
 
