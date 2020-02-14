@@ -9,9 +9,9 @@
 }
 
 .category{
-  --sports-color:#f99500;
-  --ent-color:#a66bbe;
-  --tech-color:#009cff;
+  --orang-color:#f99500;
+  --purple-color:#a66bbe;
+  --blue-color:#009cff;
 }
 
 *{
@@ -51,18 +51,28 @@ h1,h2,h3,h4,h5,h6{
 .category{
   display: inline-block;
   color: #fff;
-  font-size: 0.55rem;
+  font-size: 0.70rem;
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
   border-radius: 15px;
   margin-bottom: 0.5rem;
 }
 
-.category-1 {background: var(--sports-color);}
-.category-2 {background: var(--ent-color);}
-.category-3 {background: var(--tech-color);}
+.category-1 {background: var(--orang-color);}
+.category-2 {background: var(--purple-color);}
+.category-3 {background: var(--blue-color);}
 
+.category-1:hover{
+  opacity: 0.7;
+}
 
+.category-2:hover{
+  opacity: 0.7;
+}
+
+.category-3:hover{
+  opacity: 0.7;
+}
 
 .btn{
   display: inline-block;
@@ -94,18 +104,18 @@ h1,h2,h3,h4,h5,h6{
   max-width: var(--max-width);
   margin: auto;
   padding: 0 2rem;
-  overflow: hidden;
 }
 #main-nav{
-  background: #fff;
+  background: #333;
   position: sticky;
   top: 0;
   z-index: 2;
+  color: #fff;
 }
 
 #main-nav .container{
   display: grid;
-  grid-template-columns: 1fr 7fr 2fr ;
+  grid-template-columns: 1fr 6fr 3fr ;
   padding: 1rem;
   align-items: center;
 }
@@ -114,18 +124,18 @@ h1,h2,h3,h4,h5,h6{
   color: #a66bbe;
 }
 
-#main-nav .logo{
-  width: 180px;
-}
+
 
 #main-nav ul{
   justify-self: end;
   display: flex;
+  color: #fff
 }
 
 #main-nav ul li a{
   padding: 0.75rem;
   font-weight: bold;
+  color: #fff
 }
 
 
@@ -154,23 +164,62 @@ h1,h2,h3,h4,h5,h6{
   
 }
 
+#main-nav .container .search-section .search-icon i{
+  margin-left: 2rem;
+}
+
+
 .nav-2{
   
-  background-color: var(--dark-color);
-  color: #fff;
+  background-color: #f3f3f3;
+  color: #333;
   font-family: 'Staaliches', cursive;
-
+  position: sticky;
+  padding: .8rem;
 }
 
-.nav-2 .container{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  padding: 1rem;
-  align-items: center;
+.nav-2 .container ul {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
 }
+
+
+.nav-2 .container ul li ul{
+  display: none;
+  background-color: #fff;
+  
+}
+
+.nav-2 .container ul li:hover ul{
+  display: block;
+} 
+
+.nav-2 .container ul li:hover ul li a {
+  display: block;
+  width: 13rem;
+  position: absolute;
+}
+
+
+.nav-2 .container ul li ul li a{
+  padding: .5rem;
+}
+
+.nav-2 .container ul li ul li a{
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+
+.nav-2 .container-nav ul li ul li{
+  width: 10rem;
+  
+}
+
 .nav-2 a{
  
-  color: #fff;
+  color: #333;
 }
 
 
@@ -180,6 +229,7 @@ h1,h2,h3,h4,h5,h6{
   background: #333;
   padding: 2rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 #showcase:before{
@@ -192,7 +242,9 @@ h1,h2,h3,h4,h5,h6{
   height: 100%;
   opacity: 0.4;
 }
-
+input[type=text]{
+  height: 3.3rem;
+}
 #showcase .showcase-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -210,10 +262,15 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 1rem;
 }
 
+.gadgets .container h2 .choose{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
  .electronic-gadgets {
   display: grid;
   grid-template-rows: repeat(4,1fr);
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   margin-top: 1rem;
 }
 
@@ -221,6 +278,8 @@ h1,h2,h3,h4,h5,h6{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -228,6 +287,11 @@ h1,h2,h3,h4,h5,h6{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  transition: transform  .8s;
+}
+
+.electronic-gadget1{
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 .electronic-gadget2{
@@ -235,7 +299,8 @@ h1,h2,h3,h4,h5,h6{
   grid-template-columns: repeat(4, 1fr);
   grid-column: 1 /span 2;
   align-items: center;
-  grid-gap: .5rem;
+  grid-gap: .8rem;
+  transition: transform  .8s;
 }
 
 
@@ -262,6 +327,7 @@ h1,h2,h3,h4,h5,h6{
   padding: 1rem;
 }
 
+/* footer */
 /* Footer styling starts here */
 footer{
   background: #000;
@@ -406,5 +472,26 @@ hr{
 }
 .last{
   text-align: center;
-  letter-spacing: 8px;
+  letter-spacing: 8px;}
+
+.electronic-gadget2 .card a {
+  margin-left: 5rem;
+  border-radius: 5px;
+}
+
+.electronic-gadget2 .card{
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.electronic-gadget2 .card:hover{
+  transform: translateY(-1rem) scale(1.03);
+}
+
+.electronic-gadget2 .card img:hover{
+  transform:scale(1.1);
+}
+
+.electronic-gadget1 .card img:hover{
+  transform:scale(1.08);
+/* temporary-marge */
 }
