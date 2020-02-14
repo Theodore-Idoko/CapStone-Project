@@ -1,3 +1,4 @@
+
 :root{
   --primary-color: #c72727;
   --secondary-color:#f99500;
@@ -326,6 +327,153 @@ input[type=text]{
   padding: 1rem;
 }
 
+/* footer */
+/* Footer styling starts here */
+footer{
+  background: #000;
+  color: #fff;
+}
+
+.footer-header {
+	display: flex;
+	justify-content: space-evenly;
+  padding-top: 30px;
+  margin-top: 150px
+}
+
+.footer-header .name {
+	font-size: 1.6rem;
+	flex: 1;
+	padding-left: 50px;
+}
+.footer-header .subscription{
+ 
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.footer-header .download-app{
+  flex: 1;
+}
+.footer-header .subscription form input{
+	border-radius: 3px;
+	height: 32px;
+	border: none;
+	padding: 5px;
+	width: 45%;
+}
+.footer-header button {
+	height: 32px;
+	width: 80px;
+	border-radius: 3px;
+	border: 1px solid #fff;
+	background: #000;
+  color: #fff;
+  
+}
+.btn-mg-left{
+  margin-left: 8px;
+}
+.footer-header .subscription form button:first-child{
+margin-right: 10px;
+}
+.footer-header .cart-footer{
+  display: flex;
+}
+
+.footer-header .cart-footer p:first-child{
+ 
+    padding: 10px;
+    background: #f99500;
+    border-radius: 5px;
+  margin-right: 10px;
+}
+.wrapper{
+  background: #0f0e0e;
+}
+
+footer .footer-bottom {
+	display: flex;
+	justify-content: space-evenly;
+	
+  margin: 50px 0;
+  padding: 20px 0;
+	
+}
+footer .help{
+  flex: 1;
+  padding-left: 50px;
+}
+footer .more{
+  flex: 2;
+  display: flex;
+}
+
+footer .country{
+  flex: 1;
+  display: flex;
+  
+}
+footer .about{
+  width: 35%;
+}
+footer a{
+  color: #fff;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+footer p{
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+ 
+}
+footer ul{
+  padding-top: 20px;
+}
+
+.country-right ul{
+  margin-top: 30px;
+}
+/* contact section is the row after the bottom */
+.contact-section {
+
+}
+.container-contact{
+	display: flex;
+	padding-left: 50px;
+}
+
+.social-media {
+width: 25%;
+}
+.social-media i{
+  
+    letter-spacing: 10px;
+    padding: 20px 0;
+  
+}
+.phone{
+  width: 17%;
+}
+.payment-method{
+  
+}
+
+.payment-method i{
+  letter-spacing: 10px;
+    padding: 20px 0;
+}
+
+hr{
+  margin: 20px 0;
+  width: 100%;
+  border: 1px solid #fff;
+}
+.last{
+  text-align: center;
+  letter-spacing: 8px;}
+
 .electronic-gadget2 .card a {
   margin-left: 5rem;
   border-radius: 5px;
@@ -345,4 +493,5 @@ input[type=text]{
 
 .electronic-gadget1 .card img:hover{
   transform:scale(1.08);
+/* temporary-marge */
 }
