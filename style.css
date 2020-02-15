@@ -280,7 +280,6 @@ input[type=text]{
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
 }
 
 .electronic-gadget1 .cards{
@@ -302,8 +301,6 @@ input[type=text]{
   grid-gap: .8rem;
   transition: transform  .8s;
 }
-
-
 
 
 #article .meta{
