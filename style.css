@@ -435,6 +435,61 @@ footer ul{
 .country-right ul{
   margin-top: 30px;
 }
+/* footer responsiveness */
+@media (min-width: 690px) and (max-width: 768px) {
+  .download-app {
+   display: none;
+  }
+  footer .country{
+    display: none;
+  }
+}
+  @media (min-width: 599px) and (max-width: 690px) {
+    .download-app {
+     display: none;
+    }
+   footer .country{
+      display: none;
+    }
+  }
+  @media (max-width: 599px) {
+    .download-app {
+     display: none;
+    }
+   footer .country{
+      display: none;
+    }
+    .footer-header .subscription form input {
+      margin: 10px 0px;
+      width: 80%;
+    }
+    .make-money{
+      display: none;
+    }
+    footer .more {
+      flex: 1;
+      display: flex;
+    }
+    footer .about {
+      width: 100%;
+    }
+    .contact-section .container-contact{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-contact .social-media{
+      width: 100%;
+    }
+    .container-contact .phone{
+      width: 100%;
+    }
+  }
+
+
+
+
+
 /* contact section is the row after the bottom */
 .contact-section {
 
