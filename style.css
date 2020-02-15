@@ -357,11 +357,13 @@ img {
     margin-left: -0.1rem;
   }
 
-  
+  .no-test{
+    display: none;
+  }
 
   img {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 12rem;
+    max-height: 12rem;
   }
 
   .electronic-gadget1 {
@@ -383,7 +385,7 @@ img {
 @media (max-width: 768px) {
   #main-nav .search-section input {
     padding: 1rem 10rem 1rem 0.5rem;
-    margin-left: 3rem;
+    margin-left: -4rem;
   }
 
   #main-nav .container .search-section .search-icon {
@@ -402,8 +404,8 @@ img {
   }
 
   img {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 12rem;
+    max-height: 12rem;
   }
 
   .electronic-gadgets{
@@ -426,7 +428,7 @@ img {
 
 
   #main-nav .container .search-section .search-icon {
-    padding: 0.1rem 1rem .6rem 0.5rem;
+    padding: 0.1rem 1rem .6rem 0.3rem;
     margin-left: -0.1rem;
   }
 
@@ -441,8 +443,8 @@ img {
   }
 
   img {
-    max-width: 10rem;
-    max-height: 10rem;
+    max-width: 12rem;
+    max-height: 12rem;
   }
   .electronic-gadget1 {
     grid-template-columns: 1fr;
